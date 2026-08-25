@@ -31,21 +31,21 @@ jobs:
 
       - name: Push generated SVGs to the output branch
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           if git ls-remote --exit-code --heads origin output >/dev/null 2>&1; then
             git clone --single-branch --branch output "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git" output-repo
           else
             git init -b output output-repo
-            cd output-repo
-            git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git"
+            git -C output-repo remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git"
           fi
 
-          cp dist/github-snake.svg dist/github-snake-dark.svg output-repo/ 2>/dev/null || \
-          cp ../dist/github-snake.svg ../dist/github-snake-dark.svg output-repo/ 2>/dev/null || true
+          echo "--- dist contents ---"
+          ls -la dist/
 
-          cd output-repo
-          git add -A
-          git commit -m "chore: update contribution snake [skip ci]" 2>/dev/null || echo "no changes"
-          git push -u origin output
+          cp dist/github-snake.svg dist/github-snake-dark.svg output-repo/
+
+          git -C output-repo add -A
+          git -C output-repo commit -m "chore: update contribution snake [skip ci]" || echo "nothing to commit"
+          git -C output-repo push -u origin output
