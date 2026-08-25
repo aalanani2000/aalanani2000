@@ -1,10 +1,16 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3B82F6,55:22D3EE,100:8B5CF6&height=190&section=header&text=Abdulrahman%20Alanani&fontSize=44&fontColor=F5F7FA&animation=fadeIn&desc=AI%20Engineer%20%C2%B7%20Intelligent%20Systems%2C%20end%20to%20end&descAlignY=64&descSize=18" width="100%" alt="header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,40:3B82F6,75:06B6D4,100:8B5CF6&height=190&section=header&text=Abdulrahman%20Alanani&fontSize=44&fontColor=F5F7FA&animation=fadeIn&desc=AI%20Engineer%20%C2%B7%20Intelligent%20Systems%2C%20end%20to%20end&descAlignY=64&descSize=18" width="100%" alt="header" />
+
+<div align="center">
 
 <a href="https://anani.online" target="_blank"><img src="https://img.shields.io/badge/Live_Portfolio-anani.online-3B82F6?style=for-the-badge&logo=vercel&logoColor=white" alt="portfolio" /></a>
 <a href="https://www.linkedin.com/in/abdulrahman-alanani" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-abdulrahman--alanani-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" /></a>
 <a href="mailto:aalanani.2000@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-aalanani.2000%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email" /></a>
 
+<br />
+
 <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&pause=1100&color=3B82F6&center=true&vCenter=true&random=false&width=640&height=52&lines=AI+Engineer;LLM+Systems+%26+RAG;Computer+Vision+%26+Edge+AI;Intelligent+Automation" alt="typing" />
+
+</div>
 
 ### From model to production. From software to the physical world.
 
@@ -29,16 +35,24 @@ I build intelligent systems that connect AI models with real-world software, aut
 
 ### 🛠️ Tech stack
 
+<div align="center">
+
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,ts,react,nextjs,tailwind,tensorflow,pytorch,opencv,docker,git,github,linux&perline=12" alt="tech stack" /></a>
+
+</div>
 
 ---
 
 ### 📊 GitHub stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=aalanani2000&show_icons=true&hide_border=true&bg_color=0B0D10&title_color=3B82F6&icon_color=22D3EE&text_color=A1AAB8" height="165" alt="stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aalanani2000&layout=compact&hide_border=true&bg_color=0B0D10&title_color=3B82F6&text_color=A1AAB8&langs_count=8" height="165" alt="languages" />
+<div align="center">
 
-<img src="https://streak-stats.demolab.com?user=aalanani2000&hide_border=true&background=0B0D10&ring=3B82F6&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=A1AAB8&currStreakNum=F5F7FA&sideNums=F5F7FA&dates=6E7885" height="165" alt="streak" />
+<img src="https://profilekit.vercel.app/api/stats?username=aalanani2000&theme=dark" alt="stats" />
+<img src="https://profilekit.vercel.app/api/languages?username=aalanani2000&theme=dark" alt="languages" />
+
+<img src="https://streak-stats.demolab.com?user=aalanani2000&hide_border=true&background=0B0D10&ring=3B82F6&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=A1AAB8&currStreakNum=F5F7FA&sideNums=F5F7FA&dates=6E7885" alt="streak" />
+
+</div>
 
 ---
 
@@ -51,4 +65,4 @@ I build intelligent systems that connect AI models with real-world software, aut
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,55:22D3EE,100:3B82F6&height=120&section=footer" width="100%" alt="footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,25:06B6D4,60:3B82F6,100:6366F1&height=120&section=footer" width="100%" alt="footer" />

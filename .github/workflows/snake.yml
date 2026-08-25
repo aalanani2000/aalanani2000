@@ -30,21 +30,18 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
 
       - name: Push generated SVGs to the output branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # checkout@v4 persists its token in the LOCAL repo config only —
-          # propagate it so the separate output-repo can authenticate pushes
-          git config --global \
-            http.https://github.com/.extraheader \
-            "$(git config --local http.https://github.com/.extraheader)"
-
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          REMOTE="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
-          if git ls-remote --exit-code --heads origin output >/dev/null 2>&1; then
-            git clone --single-branch --branch output "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git" output-repo
+          if git ls-remote --exit-code --heads "$REMOTE" output >/dev/null 2>&1; then
+            git clone --single-branch --branch output "$REMOTE" output-repo
           else
             git init -b output output-repo
-            git -C output-repo remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git"
+            git -C output-repo remote add origin "$REMOTE"
           fi
 
           echo "--- dist contents ---"
