@@ -10,8 +10,6 @@
 
 I build intelligent systems that connect AI models with real-world software, automation, data, and hardware.
 
-أبني أنظمة ذكية تربط نماذج الذكاء الاصطناعي بالبرمجيات والأتمتة والبيانات والعتاد في العالم الحقيقي.
-
 - 🔭 **Now:** LLM engineering — RAG pipelines with retrieval metrics, evaluation-first workflows, agentic systems
 - 🛩️ **Shipped:** YOLOv8 fire-detection drone on Raspberry Pi (mAP@50 ≈ 0.824, grade A+) · end-to-end AI integration platform (n8n + FastAPI + bilingual RAG with refusal logic)
 - 📊 **I measure things:** downtime −15% · incident resolution +20% · 95% first-contact resolution across 200+ incidents/month
