@@ -31,6 +31,12 @@ jobs:
 
       - name: Push generated SVGs to the output branch
         run: |
+          # checkout@v4 persists its token in the LOCAL repo config only —
+          # propagate it so the separate output-repo can authenticate pushes
+          git config --global \
+            http.https://github.com/.extraheader \
+            "$(git config --local http.https://github.com/.extraheader)"
+
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
